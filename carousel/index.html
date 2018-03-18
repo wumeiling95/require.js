@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        .slider-box{
+            position: relative;
+            width: 1226px;
+            height: 460px;
+        }
+        ul li{
+            float: left;
+        }
+        .slider-img li{
+            position: absolute;
+            top:0;
+            left:0;
+            display: none;
+        }
+        .slider-img .active{
+            display: block;
+        }
+        .slider-nav{
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+        .slider-nav li{
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            color: #ffffff;
+            margin-left: 10px;
+            text-align: center;
+        }
+        .slider-nav .active{
+            background: chocolate;
+        }
+        .slider-btn{
+            position: absolute;
+            left: 20px;
+            bottom: 10px;
+        }
+        .slider-btn li{
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            color: #ffffff;
+            margin-left: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--<div class="slider-box">-->
+        <!--<div class="slider-img">-->
+            <!--<ul>-->
+                <!--<li class="active"><img src="image/1.jpg"></li>-->
+                <!--<li><img src="image/2.jpg"></li>-->
+                <!--<li><img src="image/3.jpg"></li>-->
+                <!--<li><img src="image/4.jpg"></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+        <!--<div class="slider-nav">-->
+            <!--<ul>-->
+                <!--<li class="active">1</li>-->
+                <!--<li>2</li>-->
+                <!--<li>3</li>-->
+                <!--<li>4</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+        <!--<div class="slider-btn">-->
+            <!--<ul>-->
+                <!--<li>&lt;</li>-->
+                <!--<li>&lg;</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <script src = "js/jquery-3.3.1.js"></script>
+    <script src="js/require.js" data-main="js/main"></script>
+</body>
+</html>

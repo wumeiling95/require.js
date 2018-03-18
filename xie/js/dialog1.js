@@ -26,9 +26,9 @@ define(['jquery'],function ($) {
             $(document.body).append(html);
             $('.dialog-box').css({
                 width: defaultSettings.width,
-            height:defaultSettings.height
+                height:defaultSettings.height
         });
-            if(defaultSettings.content.indexOf('.html')!=-1){
+            if(defaultSettings.content.indexOf('html')!=-1){
                 $('.dialog-content').load(defaultSettings.content);
             }else{
                 $('.dialog-content').html(defaultSettings.content);

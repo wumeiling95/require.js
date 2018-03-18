@@ -21,7 +21,7 @@ define(['jquery'],function ($) {
 
     }
     Dialog.prototype.open = function (settings) {
-        $.extend(this.defaultSettings,settings);
+        $.extend(this.defaultSettings,settings);//前后合并，以后面的为主，后面覆盖前面
         this.$tittle.append(this.$item).append(this.$close);
         this.$box.append(this.$tittle).append(this.$content).css({
             width:this.defaultSettings.width,
@@ -30,7 +30,7 @@ define(['jquery'],function ($) {
         this.$container.append(this.$mask).append(this.$box).appendTo(document.body);
         this.$item.text(this.defaultSettings.tittle);
 
-        if(this.defaultSettings.content.indexOf('.html')!=-1){
+        if(this.defaultSettings.content.indexOf('html')!=-1){//判断字符串包含什么indexOf，并返回所在第几位
            this.$content.load(this.defaultSettings.content);
         }else{
             this.$content.html(this.defaultSettings.content);
